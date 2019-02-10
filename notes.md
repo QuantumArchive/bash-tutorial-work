@@ -12,3 +12,24 @@ On the Shebang (#!):
 * After the '#!' is the path to the interpreter of the shell script
 * Generally you are going to want an absolute path for your interpreter
 * At a Bash shell, you can execute the script without a shebang and Bash will assume it's a Bash script (Only works assuming user is running in a Bash shell)
+
+#On Variables
+
+Some important variables:
+
+```bash
+$0 # your bash script name
+$1 - $9 # the arguments for your bash script
+$# # how many arguments
+$@ # all arguments
+$? # the exit status of the most recently run process
+$$ # the process ID of the current script
+$USER # user running the script
+$HOSTNAME # hostname of the machine
+$SECONDS # seconds since script was executed
+$RANDOM # random number
+$LINENO # Returns current line number in script
+```
+
+`env` lets you see environment variables within your shell
+
