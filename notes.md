@@ -33,3 +33,14 @@ $LINENO # Returns current line number in script
 
 `env` lets you see environment variables within your shell
 
+#On STDIN/STDOUT/STDERR
+
+Each process gets the following files:
+
+* STDIN  - /proc/<processID>/fd/0 | /dev/stdin  | /proc/self/fd/0
+* STDOUT - /proc/<processID>/fd/1 | /dev/stdout | /proc/self/fd/1
+* STDERR - /proc/<processID>/fd/2 | /dev/stderr | /proc/self/fd/2
+
+fd above stands for file descriptor
+
+
