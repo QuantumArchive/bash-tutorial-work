@@ -44,3 +44,24 @@ Each process gets the following files:
 fd above stands for file descriptor
 
 
+Some operation and what they do:
+
+| Operator            | Description |
+| ------------------- | ----------- |
+| ! expression        | returns the logical opposite of the expression |
+| -n string           | return true if string length > 0 |
+| -z string           | return true if string length = 0 |
+| string = string     | check strings are equal |
+| string != string    | check strings are not equal |
+| integer -eq integer | integers are equivalent |
+| integer -gt integer | left integer greater than right integer |
+| integer -lt integer | left integer is less than right integer |
+| -d file             | file exists and is a directory |
+| -e file             | file exists |
+| -r file             | file exists and the read permission is granted |
+| -s file             | file exists and it's size is greater than zero |
+| -w file             | file exists and the write permission is granted |
+| -x file             | file exists and the execute permission is granted |
+
+Note: Remember that the bracket in the if statement is referring to the in built bash test command!
+
