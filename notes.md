@@ -13,7 +13,7 @@ On the Shebang (#!):
 * Generally you are going to want an absolute path for your interpreter
 * At a Bash shell, you can execute the script without a shebang and Bash will assume it's a Bash script (Only works assuming user is running in a Bash shell)
 
-#On Variables
+# On Variables
 
 Some important variables:
 
@@ -33,7 +33,7 @@ $LINENO # Returns current line number in script
 
 `env` lets you see environment variables within your shell
 
-#On STDIN/STDOUT/STDERR
+# On STDIN/STDOUT/STDERR
 
 Each process gets the following files:
 
@@ -65,3 +65,10 @@ Some operation and what they do:
 
 Note: Remember that the bracket in the if statement is referring to the in built bash test command!
 
+# On Supplying Data
+
+How to supply data to bash script:
+
+* As command line arguments
+* Redirected in as STDIN (curl?)
+* Read interactively during script execution
